@@ -18,6 +18,8 @@
     background: orangered;
     height: 100px;
     width: 100px;
+    position: relative;
+    
   }
   
   .kettle-bottom[
@@ -55,24 +57,36 @@
     top: 30px
   }
   
-  .cup{
+  .cup {
     border: 1px solid;
-    background-image: linear-gradient(background: rgb(255,255,255);
-		background: linear-gradient(90deg, rgba(255,255,255,1) 49%, rgba(0,1,255,1) 49%, rgba(255,255,255,1) 100%););
-    background-size: 100% 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 49%, rgba(0, 1, 255, 1) 49%, rgba(255, 255, 255, 1) 100%); );
+   	background-image: linear-gradient(background: rgb(255, 255, 255));
+     background-size: 30% 10%;
     width: 50px;
     height: 55px;
     position: absolute;
-    left: 5px;
-    bottom: 5px;
+    left: 60px;
+    bottom: 20px;
   }
+  
+   .triangle {
+    background: red;
+    width: 50%;
+    height: 100%;
+    clip-path: polygon(100% 51%, 0 0, 0 100%);
+  } 
+    
+    .star {
+    color: white;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+     }
   
 </style>
 
 
 <div class="frame">
   <div class="coffee">
-    <div class="brand" ; style="font-family:impact" ; style="font-size:50vw" ;>
+    <div class="brand" ; style="font-family:impact";>
       CAF <p>
       </p> BUS
     </div>
@@ -80,6 +94,8 @@
 	<div class="oval" </div>
       </div>
   <div class="cup">
+    <div class="triangle"></div>
+    <div class="star"></div>
   		</div>
   <div class="kettle-body">
       </div>
