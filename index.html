@@ -4,9 +4,9 @@
   }
 
   .frame {
+    position: relative;
     border: 1px solid black;
     width: 500px;
-    height: 500px;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -21,35 +21,53 @@
   }
 
  .oval {
-    width: 200px;
-    height: 100px;
+    width: 150px;
+    height: 30px;
     background: navajowhite;
     border-radius: 100px / 50px;
-    justify-content: right;
-    align-items: right;
+    position: relative;
+   	bottom: 130px;
   }
  
   .coffee {
   	width: 150px;
  	 	height: 185px;
-  	background-color: hsl(49, 100%, 53%)
+  	background-color: hsl(49, 100%, 53%);
+    transform: translate(250px, 70px);
   }
   
-  .red{}
+  .red{
+    background-color: red;
+    height: 35%;
+    width: 150px;
+  position: relative;
+    top: 65px
+
+  }
   
+  .brand{
+    position: relative;
+   	left: 100px;
+    top: 30px
+  }
+  	
 </style>
 
 
 <div class="frame">
   <div class="coffee">
-    	<div class="brand"
+  	<div class="brand"; 
+           style="font-family:impact"; 
+           style="font-size:50vw";>
+        CAF <p>
+        </p> BUS 
+				</div>
+    <div class="red"
+       </div>
+    	<div class="oval"
            </div>
-      <div class="red"
-           </div>
-	</div>
-  <div class="kettle-body">
-	</div>
-  <div class="oval">
+		</div>
+	<div class="kettle-body">
 	</div>
 </div>
 
