@@ -1,3 +1,8 @@
+<head>
+  <meta name="description" content="A still life depicting a kettle, two mugs, and a tin of coffee resting on a table, rendered in CSS code.">
+  <meta name="author" content="Nicole Stachowiak">
+</head>
+
 <style>
   body {
     background-color: tan;
@@ -20,7 +25,7 @@
     height: 150px;
     width: 100px;
     position: relative;
-    bottom: 280px;
+    bottom: 445px;
     right: 150px;
     z-index: 5
   }
@@ -81,6 +86,16 @@
     border-bottom-right-radius: 10px;
   }
 
+  .kettle-reflection {
+    width: 105px;
+    height: 20px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5247286414565826) 0%, rgba(101, 101, 101, 0.4715073529411765) 100%);
+    border-radius: 100px / 50px;
+    position: relative;
+    bottom: 125px;
+    z-index: -1
+  }
+
   /*coffee-container*/
 
   .oval {
@@ -98,7 +113,8 @@
     background-color: hsl(49, 100%, 53%);
     transform: translate(250px, 70px);
     position: relative;
-    bottom: 10px;
+    bottom: 20px;
+    z-index: 1;
   }
 
   .red {
@@ -149,8 +165,8 @@
 
   .shadow {
     width: 70px;
-    height: 30px;
-    background: black;
+    height: 20px;
+    background: hsl(63, 21%, 64%);
     border-radius: 100px / 50px;
     position: relative;
     bottom: 35px;
@@ -193,10 +209,9 @@
     width: 450px;
     height: 140px;
     background: cornsilk;
-    transform: rotate(355deg);
     position: relative;
-    bottom: 210px;
-    right: 90px;
+    bottom: 150px;
+    right: 230px;
     z-index: -4
   }
 
@@ -211,7 +226,7 @@
 </style>
 
 
-	<!-- frame-->
+<!-- frame-->
 <div class="frame">
 
   <!--coffee tin-->
@@ -224,7 +239,8 @@
     <div class="red" </div>
       <div class="oval" </div>
       </div>
-	<!-- cup 1-->
+
+      <!-- cup 1-->
       <div class="cup">
         <div class="flag">
           <div class="triangle">
@@ -236,7 +252,7 @@
         <div class="handle"></div>
       </div>
 
-	<!--cup 2-->
+      <!--cup 2-->
       <div class="cup">
         <div class="flag">
           <div class="triangle">
@@ -246,13 +262,13 @@
         <div class="handle"></div>
         <div class="shadow"></div>
       </div>
-  
-	<!-- table-->
-  
-   <div class="table">
-          <div class="table-shadow"></div>
-        </div>
-  
+
+      <!-- table-->
+      <div class="table">
+        <div class="table-shadow"></div>
+      </div>
+
+      <!-- kettle-->
       <div class="kettle-body">
         <div class="kettle-bottom">
         </div>
@@ -261,5 +277,5 @@
         <div class="kettle-knob"></div>
         <div class="kettle-spout"></div>
         <div class="kettle-handle"></div>
-
+        <div class="kettle-reflection"></div>
       </div>
